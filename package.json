@@ -5,7 +5,7 @@
   "main": "main.js",
   "scripts": {
     "start": "nodemon app.js",
-    "start:debug": "babel-node-debug  app.js",
+    "start:debug": "nodemon --debug  app.js",
     "db": "mongod",
     "commit:init": "commitizen init cz-conventional-changelog --save --save-exact",
     "lint": "standard --verbose | snazzy --format",
@@ -52,10 +52,12 @@
     "conventional-changelog-cli": "^1.2.0",
     "cz-conventional-changelog": "^1.2.0",
     "ghooks": "^1.3.2",
+    "mockjs": "^1.0.1-beta3",
     "nodemon": "^1.11.0",
     "snazzy": "^5.0.0",
     "standard": "^8.3.0",
-    "validate-commit-msg": "^2.8.2"
+    "validate-commit-msg": "^2.8.2",
+    "winston": "^2.2.0"
   },
   "dependencies": {
     "chalk": "^1.1.3",
@@ -66,8 +68,6 @@
     "koa-scheme": "^2.2.0",
     "koa-static": "^2.0.0",
     "ls-sync": "^0.3.0",
-    "mongodb": "^2.2.10",
-    "mongoose": "^4.6.3",
     "validator": "^6.0.0"
   }
 }

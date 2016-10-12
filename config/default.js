@@ -5,11 +5,6 @@
 module.exports = {
   ip: process.env.IP || 'localhost',
   port: process.env.PORT || 4000,
-  mongodb: {
-    ip: '127.0.0.1',
-    port: '27017',
-    db: 'club'
-  },
   env: {
     asset: '',
     origin: '',

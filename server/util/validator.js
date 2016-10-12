@@ -1,9 +1,9 @@
 var validator = require('validator')
-var message = require('../../../util/message')
+var message = require('./message')
 var isNotEmpty = function isNotEmpty (msg) {
   return function (paramVal) {
     var msgObj
-    if (paramVal === undefined || validator.isNull(paramVal)) {
+    if (paramVal === undefined || validator.isEmpty(paramVal)) {
       msgObj = message.format({
         message: msg || '参数格式不正确'
       })
